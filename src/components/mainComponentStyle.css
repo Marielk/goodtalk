@@ -1,0 +1,269 @@
+/* This sheet contains style from the mainComponent */
+.tileBoard{
+  margin-top: 30%;
+  margin-bottom: 20%;
+}
+.resetButtonContainer{
+  margin-top: 15%;
+  text-align: right;
+  margin-right: 10%;
+}
+.resetButton{
+  color:lightslategray;
+  border: none;
+  background-color: white;
+  font-size: 1em;
+}
+.x{
+  background-color: rgb(174, 185, 197);
+  color: white;
+  font-size: 2em;
+  padding: 3px 10px 3px 10px; 
+  margin-left: 20px;
+  vertical-align: sub;
+  border-radius: 50%;
+}
+.tileSingle{
+  background: linear-gradient(rgba(214,196,0,1) 0%, rgba(222,133,0,1) 70%, rgba(222,133,0,1) 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid rgb(218, 66, 11);
+  text-shadow: -2px 0px 2px rgba(51, 51, 51, 0.192);
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+.tileSingle:active{
+  background: linear-gradient(rgb(255, 60, 60) 0%, rgb(179, 12, 12) 70%, rgb(104, 6, 6) 100%);
+  border: none;
+  border-radius: 10px;
+}
+.tileSingleactive{
+  background: linear-gradient(rgb(255, 60, 60) 0%, rgb(179, 12, 12) 70%, rgb(104, 6, 6) 100%);
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(218, 66, 11);
+  text-shadow: -2px 0px 2px rgba(51, 51, 51, 0.192);
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+.tileSingle::before{
+  background: linear-gradient(rgb(255, 60, 60) 0%, rgb(179, 12, 12) 70%, rgb(104, 6, 6) 100%);
+  border: none;
+  border-radius: 10px;
+}
+.tileSingleValid{
+  background: linear-gradient(rgb(191, 253, 76) 0%, rgb(58, 172, 23) 70%, rgb(40, 99, 1) 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 2px solid rgb(1, 233, 117);
+  text-shadow: -2px 0px 2px rgba(51, 51, 51, 0.192);
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.outPut{
+  border: 2px solid rgb(170, 170, 170);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding: 20px 30px 40px 30px;
+    width: 66%;
+}
+.outPutValid{
+  color: rgb(29, 172, 36);
+  border: 2px solid rgb(170, 170, 170);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px 40px 30px;
+  width: 66%;
+  text-align: left;
+}
+.outPutInvalid{
+  color: red;
+  border: 2px solid rgb(170, 170, 170);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 30px 40px 30px;
+  width: 66%;
+  text-align: left;
+}
+
+.validWordText{
+  display: none;
+  float: right;
+}
+.validWordTextOk{
+  display: block;
+  float: right;
+}
+.invalidWordText{
+  display: block;
+  float: right;
+}
+.invalidWordTextHide{
+  display: none;
+}
+
+/* Mobile */
+@media only screen 
+and (max-width : 425px) {
+  .resetButtonContainer {
+    margin-top: 15%;
+    text-align: right;
+    margin-right: 9%;
+}
+}
+
+/* Tablet */
+@media only screen 
+and (min-width : 768px) {
+  .outPut{
+      width: 40%;
+  }
+  .outPutValid{
+    width: 40%;
+
+  }
+  .outPutInvalid{
+    width: 40%;
+  }
+
+  .resetButtonContainer {
+  margin-top: 15%;
+  text-align: right;
+  margin-right: 25%;
+}
+  
+}
+
+/* Desktop */
+@media only screen 
+and (min-width : 1024px) {
+  .outPut {
+    position: relative;
+    top: -295px;
+    left: 270px;
+    width: 35%;
+  }
+  .outPutValid{
+    position: relative;
+    top: -295px;
+    left: 270px;
+    width: 35%;
+
+  }
+  .outPutInvalid{
+    position: relative;
+    top: -295px;
+    left: 270px;
+    width: 35%;
+  }
+
+  .tileBoard {
+    position: relative;
+    top: 0px;
+    left: -200px;
+  }
+  .resetButtonContainer {
+    position: relative;
+    top: 350px;
+    left: 214px;
+    margin-top: -27%;
+  }
+  
+
+}
+
+@media only screen 
+and (min-width : 1440px) {
+  .outPut {
+    position: relative;
+    top: -403px;
+    left: 369px;
+    width: 40%;
+  }
+  .outPutValid{
+    position: relative;
+    top: -403px;
+    left: 369px;
+    width: 40%;
+
+  }
+  .outPutInvalid{
+    position: relative;
+    top: -403px;
+    left: 369px;
+    width: 40%;
+  }
+
+  .tileBoard {
+    position: relative;
+    top: 0px;
+    left: -200px;
+  }
+  .resetButtonContainer {
+    position: relative;
+    top: 445px;
+    left: 310px;
+
+  }
+}
+
+
+@media only screen 
+and (min-width : 2560px) {
+  .outPutInvalid {
+    position: relative;
+    top: -628px;
+    left: 430px;
+    width: 20%;
+}
+  .outPutValid {
+    position: relative;
+    top: -628px;
+    left: 430px;
+    width: 20%;
+
+  }
+
+  .outPutInvalid{
+    position: relative;
+    top: -628px;
+    left: 430px;
+    width: 20%;
+    
+  }
+
+  .tileBoard {
+    position: relative;
+    top: 0px;
+    left: -200px;
+  }
+
+  .resetButtonContainer {
+    position: relative;
+    top: 800px;
+    left: -300px;
+    margin-top: -26%;
+    text-align: right;
+    margin-right: 10%;
+}
+} 

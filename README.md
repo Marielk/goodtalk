@@ -1,68 +1,72 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GoodTalk App Challenge 
 
-## Available Scripts
 
-In the project directory, you can run:
+## About the challenge 🚀
+**Developed for**
+[GoodTalk App](https://goodtalk.app/)
 
-### `npm start`
+_This is a little project, a coding challeng build by Goodtalk to their interview process, i am applying for the
+Front-end position here in Santiago de Chile, this project has been code in Reactjs framework without any external libraries._
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[link to challenge](https://github.com/Goodtalkapp/gdtlk-interview)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Pre-requires 📋
 
-### `npm test`
+_You have to install npm (sudo) npm install -g_
+Your favorite terminal ( example git Bash) 
+You should have a uncompres program like WinRAR or similar
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Instation 🔧
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_Follow this steps to run the project_
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+After download the file and unfold it, excecute your Power shell (ex Git Bash) inside the project folder.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+$npm install 
+```
+And then 
 
-### `npm run eject`
+```
+$ npm start
+```
+This will run the proyect on Local Host port 3000, if it doesn´t open it self you can see it 
+<a href="http://localhost:3000">HERE</a>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## How it is works ⚙️
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You can tap a button to select a tilt in order to form a word, this word by default is invalid. But if your word exist in 
+the dictionary file, it becomes valid and change the color to a nice green. 
+<img src="http://i65.tinypic.com/2dietzl.png" alt="state 1">
+<img src="http://i65.tinypic.com/mwf59j.png" alt="state 2">
+<img src="http://i65.tinypic.com/23wqgir.png" alt="state 3">
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+##Part 3 of challenge Aswers
+There are several errors that can be important in the code.
+The first thing I think would be the issue of security. You can not store passwords as plain text. that's a BIG security flaw. the ideal is to encrypt them in some way. with a library or something like that.
+Second, I would say that it is error handling when starting the server. only the case in which the user does not exist is working, but if the passwords do not match nothing happens. there should be handled in a better way.
+Third it could be that at the beginning, when external dependencies are invoked, you are mixing ways to call them. as import and require at the same time you should decide an and stick to it.
+That occurs to me for now. I think there are more, in any case, but the most important ones I think would be those 😄
 
-## Learn More
+## Usefull documentation used in this project 📦
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Loops in react render**
+https://blog.cloudboost.io/for-loops-in-react-render-no-you-didnt-6c9f4aa73778
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**About the state in react** 
+https://medium.com/@justintulk/best-practices-for-resetting-an-es6-react-components-state-81c0c86df98d
 
-### Code Splitting
+**Used js inside the render** 
+https://thinkster.io/tutorials/rendering-variables-in-react
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+**About the components life cicle**
+https://medium.com/@simonhoyos/ciclos-de-vida-de-los-componentes-de-react-e1bf48a5ff73
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Coded by ✒️
 
-### Making a Progressive Web App
+* **Mariel Quezada** - *Developer* - [Marielk](https://github.com/Marielk)
+:woman: :computer:. 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
